@@ -1,0 +1,132 @@
+
+header {
+    background-color: #4f4d1e;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+    transform: scale (1.0)
+
+}
+header h2{
+    text-align: right
+}
+
+header li :hover{
+
+    transition: background-color 0.6s ease, color 0.6s ease, transform 0.1s ease;
+    color: black;
+    text-decoration: none;
+
+
+}
+
+
+.logo img{
+    height: 350px;
+    width: 500px
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+section nav a{
+    background-color: #f2f2f2;
+    text-decoration: none;
+    color: black;
+    display:flex;
+    transition: background-color 6.6s ease, color 0.6s ease, transform 0.1s ease;
+
+}
+section nav a:hover{
+    border: solid 2px #f2f2f2;
+    color: black;
+    transform: scale (2.2);
+}
+section {
+    flex: 0.3;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+
+}
+iframe{
+    width: auto;
+    border:0px solid #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.redes-sociais a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
+button{
+    border: solid 2px white;
+    border-radius: 20px;
+    color: white;
+    background-color: #4f4d1e;
+    transition: background-color 0.5s ease, color 0.5s ease, transform 0.5s ease;
+    font-weight: bold;
+    margin-right: 20px;
+
+}
+button:hover{
+    background-color: black;
+    color: white;
+    transform: scale(1.2)
+
+}
+article {
+    width: 400px;
+    background: #fff;
+    padding: 20px 20px 0;
+    font-size: 18px;
+    max-height: 270px;
+    overflow: hidden;
+    transition: max-height 1s;
+    text-align: justify;
+    margin-top: 20px;
+
+}
+article.abrir {
+    max-height: 1000px;
+}

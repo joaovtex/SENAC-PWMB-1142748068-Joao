@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>JockStock</title>
+    </head>
+    <body>
+        <header>
+             <button id="resultado" onclick="logar()"><strong>LOGIN</strong></button>
+            <nav>            
+                <div class="logo">
+                    <img src="img/logo.png" alt="saul">
+                </div> 
+                <nav>  
+                    <ul class="menu" >
+                        <li><a href="#home">FILIAIS</a></li>
+                        <li><a href="#REF">REFERENCIAIS</a></li>
+                        <li><a href="#SOB">SOBRE A EMPRESA</a></li>
+
+                    </ul>
+                    <!-- Informaçooes do site -->
+                </nav>
+        </header>
+
+        <main class="opcoes">
+            <section id="opcoes">
+
+                <h1>Opçoes de Estoque</h1>
+                <nav> 
+                    <a href="estoqueadd.html" target="inicio"> Adcionar ao estoque</a>
+                    <a href="estoqueremove.html">Remover do estoque</a>
+                    <a href="estoquelocal.html">Localizar no Estoque</a>
+                </nav>
+                <!-- Opçoes do site -->
+            </section>
+            <aside>
+
+                <div class="inicio" >
+                    <h2>Pagina inicial</h2>
+                    <article id="conteudo">
+                        <p>
+                            texto de descrição
+                        </p>
+                    </article> 
+                    <button id = "Ler" >Mostrar mais</button>
+                    <script>
+                        const article = document.querySelector("#conteudo");
+                        const button = document.querySelector("#Ler");
+
+                        button.addEventListener("click", lermais);
+
+                        function lermais() {
+                            if (article.className === "abrir") {
+                                // Ler menos
+                                article.className = "";
+                                button.innerHTML = "Mostrar Mais"; // Mostrar mais
+                            } else {
+                                article.className = "abrir";
+                                button.innerHTML = "Mostrar Menos"; // Mostrar menos
+                            }
+                        }
+
+                    </script>
+
+                    <!-- Informaçoes e outros -->
+                </div>
+            </aside>
+        </main>
+
+        <footer>
+            <div class="redes-sociais">
+                <a href="#">WhatsApp</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </footer>
+        <script 
+            src = "java.js">
+
+        </script>
+    </body>
+</html>

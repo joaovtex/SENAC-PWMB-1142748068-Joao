@@ -1,0 +1,34 @@
+
+<html>
+    <head>
+        <title>opçoes</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+                           <article id="conteudo">
+                        <p>
+                         texto para apresentação do site   
+                        </p>
+                    </article> 
+                    <button id = "Ler" >Mostrar mais</button>
+        <script>
+                const article = document.querySelector("#conteudo");
+                const button = document.querySelector("#Ler");
+
+                button.addEventListener("click", readMore);
+
+                function readMore() {
+                    if (article.className === "open") {
+                        // Ler menos
+                        article.className = "";
+                        button.innerHTML = "Show more"; // Mostrar mais
+                    } else {
+                        article.className = "open";
+                        button.innerHTML = "Show less"; // Mostrar menos
+                    }
+                }
+
+        </script>
+    </body>
+</html>
