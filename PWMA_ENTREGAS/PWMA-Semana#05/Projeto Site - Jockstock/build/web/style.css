@@ -1,0 +1,99 @@
+
+header {
+    background-color: #4f4d1e;
+    color: #000000;
+    padding: 10px 0;
+    text-align: center;
+}
+header h2 a{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: underline overline double white;
+    
+}
+header h2{
+    font-size: 20px;
+    text-align: right;
+    padding: 2px;
+
+}
+header li a:hover{
+    background-color: black;
+    text-decoration: none
+}
+
+
+.logo img{
+    height: 350px;
+    width: 500px
+}
+
+.menu {
+    list-style: none;
+    padding: 0;
+}
+
+.menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+
+}
+
+.menu a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+section nav a{
+    background-color: #f2f2f2;
+    text-decoration: none;
+    color: black;
+    display:flex;
+}
+section nav a:hover{
+    background-color: grey;
+
+}
+section {
+    flex: 0.3;
+    padding: 20px;
+    background-color: #f2f2f2;
+    margin-right: 20px;
+}
+
+aside {
+    flex: 1;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+iframe{
+    width: auto;
+    border:0px solid #ffffff;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.redes-sociais a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.redes-sociais a:hover {
+    text-decoration: underline;
+}
