@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>JockStock</title>
+    </head>
+    <body>
+        <div class="image"></div>
+        <header>
+            <button id="resultado" onclick="logar()"><strong>LOGIN</strong></button>
+            <nav>
+                <div class="logo">
+                    <img src="img/logo.png" alt="jock">
+                </div>
+                <nav>
+                    <ul class="menu" >
+                        <li><a href="#home">FILIAIS</a></li>
+                        <li><a href="#REF">REFERENCIAIS</a></li>
+                        <li><a href="#SOB">SOBRE A EMPRESA</a></li>
+
+                    </ul>
+                    <!-- Informaçooes do site -->
+                </nav>
+        </header>
+
+        <main class="opcoes">
+
+            <div class="inicio">
+                
+                <h2 >Pagina inicial</h2>
+                
+                <article id="conteudo">
+                    <p>
+                        Em uma manhã ensolarada, Maria decidiu fazer uma caminhada pelo parque da cidade. 
+                        O céu estava azul e as árvores balançavam suavemente com a brisa matinal.
+                        Enquanto ela caminhava pelo caminho de cascalho, viu um pequeno esquilo correndo de um lado para o outro em busca de comida.
+                    </p>
+
+                    <p>
+                        Maria sorriu ao observar o esquilo e decidiu parar por um momento para apreciar a natureza.
+                        Ela se sentou em um banco próximo a um lago tranquilo, onde patos nadavam despreocupadamente.
+                        Enquanto ela contemplava a água, notou um círculo de pedras equilibradas à beira do lago,
+                        como se alguém tivesse construído uma pequena obra de arte.
+                    </p>
+
+                    <p>
+                        Intrigada, Maria se aproximou e examinou as pedras. Elas estavam dispostas de forma harmoniosa,
+                        cada uma equilibrada cuidadosamente sobre a outra.
+                        Era como se as pedras representassem a paz e a estabilidade em meio ao caos do mundo.
+                    </p>
+                    <p>
+                        Maria percebeu que, às vezes, a beleza pode ser encontrada nos lugares mais inesperados,
+                        como em um conjunto de pedras equilibradas à beira de um lago tranquilo.
+                        Ela tirou uma foto das pedras para lembrar desse momento especial e continuou sua caminhada,
+                        sentindo-se grata pela simplicidade e beleza da vida.
+                    </p>
+                </article>
+                <button id = "Ler" >Mostrar mais</button>
+                <script>
+                    const article = document.querySelector("#conteudo");
+                    const button = document.querySelector("#Ler");
+
+                    button.addEventListener("click", lermais);
+
+                    function lermais() {
+                        if (article.className === "abrir") {
+                            // Ler menos
+                            article.className = "";
+                            button.innerHTML = "Mostrar Mais"; // Mostrar mais
+                        } else {
+                            article.className = "abrir";
+                            button.innerHTML = "Mostrar Menos"; // Mostrar menos
+                        }
+                    }
+                </script>
+
+                <!-- Informaçoes e outros -->
+            </div>
+
+
+            <div>
+                <section>
+
+                    
+                    <p>A amizade consegue ser tão complexa.
+                        Deixa uns desanimados, outros bem felizes.
+                        É a alimentação dos fracos
+                        É o reino dos fortes.
+                    </p>
+                    <p> Faz-nos cometer erros
+                        Os fracos deixam se ir abaixo
+                        Os fortes erguem sempre a cabeça
+                        Os assim assumem-nos.
+                    </p>
+                    <p> Sem pensar conquistamos
+                        o mundo geral
+                        e construímos o nosso pequeno lugar,
+                        deixando brilhar cada estrelinha.
+                    </p>
+                    <p> Estrelinhas.
+                        Doces, sensíveis, frias, ternurentas.
+                        Mas sempre presentes em qualquer parte.
+                        Os donos da amizade.
+                    </p>
+                </section></div>
+                    <aside> 
+                                            <ul>
+                        <li>
+                            bla bla bla
+                        </li>
+                                                <li>
+                            bla bla bla
+                        </li>
+                    </ul>
+                
+            </aside>
+            <div class="content">
+            </div>
+        </main>
+
+        <footer>
+            <div class="redes-sociais">
+                <a href="#">WhatsApp</a> |
+                <a href="#">Instagram</a>
+            </div>
+        </footer>
+        
+        <script
+            src = "java.js">
+        </script>
+    </body>
+</html>
